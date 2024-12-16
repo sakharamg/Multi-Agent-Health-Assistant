@@ -1,0 +1,4 @@
+venv
+**db.sqlite3
+trail/
+en_core_web_trf-3.8.0
