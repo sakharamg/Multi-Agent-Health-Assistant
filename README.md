@@ -77,3 +77,6 @@ workflows.
 3. Create a Twilio account and added the credentials in env variable to send notificaitons SMS
 4. Running the server 
     ```python manage.py runserver```
+
+## Demo Video
+[![Video Title](https://img.youtube.com/vi/yAynmPSm_G8/0.jpg)](https://www.youtube.com/watch?v=yAynmPSm_G8)
