@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import csv
 from eliteapi.models import Patient, PatientVitals
+from eliteapi.views import processSoftSOS
 
 class AbnormalityDetectorWithAveraging:
     def __init__(self, vitals, rest_threshold=20, avg_window=1):
@@ -46,6 +47,7 @@ class AbnormalityDetectorWithAveraging:
             patientobj = Patient.objects.get(patient_id=1)  
             patientVitalsObj = PatientVitals.objects.create(patient_id=patientobj, vitals=self.vitals, softSOS=True)
             # triggerSoftSOS(abnormality, vitals)
+            processSoftSOS(vitals)
             print("Abnormality Detected: ", abnormality)
         return
 

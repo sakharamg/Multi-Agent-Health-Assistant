@@ -11,5 +11,6 @@ urlpatterns = [
     path("detectAbnormality/", views.detectAbnormality),
     path("createReminder/", views.createReminders),
     path("getReminders/", views.getReminders),
-    path("sendReminder/", views.sendReminders)
+    path("sendReminder/", views.sendReminders),
+    path("prescriptionUpload/", views.handlePrescriptionUpload)
 ]

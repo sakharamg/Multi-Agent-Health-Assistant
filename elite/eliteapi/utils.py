@@ -3,6 +3,8 @@ import time
 from datetime import datetime
 import csv
 from eliteapi.models import PatientVitals, Patient
+import easyocr
+import re
 
 class SmartwatchSimulator:
     def __init__(self, save_interval=60, output_file="vitals_data.csv"):
@@ -105,3 +107,47 @@ def watchSimulator():
         # time.sleep(5)  # Update every 5 seconds
     # except KeyboardInterrupt:
     #     print("\nSimulation stopped.")
+
+def handleFileUpload(f):
+    with open("/home/s_gawade/shivam/Multi-Agent-Health-Assistant/elite/media/prescription.jpg", "wb+") as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
+
+
+# Create an OCR reader object
+def getPrescriptionOCR(image_path):
+    reader = easyocr.Reader(['en'])
+    result = reader.readtext(image_path)
+    string=""
+    for detection in result:
+        string += " "+detection[1]
+    match  = re.search("Prescription", string, re.IGNORECASE)
+    processed = string[match.end():]
+    match = re.search("Signature", processed, re.IGNORECASE)
+    processed = processed[:match.start()]
+    return processed
+
+def inferDosagefromOCR(ocr_string: str):
+    if "1-0-0" in ocr_string:
+        return "Before breakfast"
+    elif "0-1-0" in ocr_string:
+        return "After lunch"
+    elif "0-0-1" in ocr_string:
+        return "After dinner"
+    elif "1-1-1" in ocr_string:
+        return "Before every meal"
+    elif "1-0-1" in ocr_string:
+        return "After Breakfast and dinner"
+    elif "0-1-1" in ocr_string:
+        return "After Lunch and dinner"
+    elif "1-1-0" in ocr_string:
+        return "After breakfast and lunch"
+    
+def extractSubstring(string, start_tag):
+    end_tag = "</" + start_tag[1:]
+    start = string.find(start_tag)
+    end = string.find(end_tag)
+    if start != -1 and end != -1:
+        return string[start + len(start_tag) : end]
+    else:
+        return ""

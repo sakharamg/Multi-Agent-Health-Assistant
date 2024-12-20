@@ -160,7 +160,8 @@ def get_available_specialists(history):
     specialists = [
         {
             "specialist_id": "123",
-            "name": "Dr. John Smith (Cardiologist)",
+            "name": "Dr. John Smith",
+            "specialization": "Cardiologist",
             "available_slot": {
                 "date": "2024-11-01",
                 "time": "09:00-09:30"
@@ -168,7 +169,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "456",
-            "name": "Dr. Emily Brown (Neurologist)",
+            "name": "Dr. Emily Brown",
+            "specialization": "Neurologist",
             "available_slot": {
                 "date": "2024-10-15",
                 "time": "16:00-16:30"
@@ -176,23 +178,17 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "789",
-            "name": "Mr. Michael White (Orthopedic Surgeon)",
+            "name": "Mr. Michael White",
+            "specialization": "Orthopedic Surgeon",
             "available_slot": {
                 "date": "2024-09-20",
                 "time": "11:00-11:30"
             }
         },
         {
-            "specialist_id": "101",
-            "name": "Dr. Sarah Lee (Pediatrician)",
-            "available_slot": {
-                "date": "2024-08-25",
-                "time": "08:00-08:30"
-            }
-        },
-        {
             "specialist_id": "202",
-            "name": "Dr. David Kim (Gynecologist)",
+            "name": "Dr. David Kim",
+            "specialization": "Gynecologist",
             "available_slot": {
                 "date": "2024-07-30",
                 "time": "13:00-13:30"
@@ -200,23 +196,17 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "303",
-            "name": "Ms. Jessica Wong (Physiotherapist)",
+            "name": "Ms. Jessica Wong",
+            "specialization": "Physiotherapist",
             "available_slot": {
                 "date": "2024-06-10",
                 "time": "15:00-15:30"
             }
         },
         {
-            "specialist_id": "404",
-            "name": "Dr. Robert Taylor (ENT Specialist)",
-            "available_slot": {
-                "date": "2024-05-05",
-                "time": "10:00-10:30"
-            }
-        },
-        {
             "specialist_id": "505",
-            "name": "Dr. Maria Garcia (Psychiatrist)",
+            "name": "Dr. Maria Garcia",
+            "specialization": "Psychiatrist",
             "available_slot": {
                 "date": "2024-04-20",
                 "time": "17:00-17:30"
@@ -224,7 +214,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "606",
-            "name": "Mr. William Johnson (Radiologist)",
+            "name": "Mr. William Johnson",
+            "specialization": "Radiologist",
             "available_slot": {
                 "date": "2024-03-15",
                 "time": "12:00-12:30"
@@ -232,7 +223,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "707",
-            "name": "Dr. Olivia Nguyen (Oncologist)",
+            "name": "Dr. Olivia Nguyen",
+            "specialization": "Oncologist",
             "available_slot": {
                 "date": "2024-02-28",
                 "time": "18:00-18:30"
@@ -240,7 +232,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "808",
-            "name": "Ms. Sophia Patel (General Practitioner)",
+            "name": "Ms. Sophia Patel",
+            "specialization": "General Practitioner",
             "available_slot": {
                 "date": "2024-01-22",
                 "time": "09:30-10:00"
@@ -248,7 +241,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "909",
-            "name": "Dr. Henry Chen (Endocrinologist)",
+            "name": "Dr. Henry Chen",
+            "specialization": "Endocrinologist",
             "available_slot": {
                 "date": "2024-12-15",
                 "time": "14:30-15:00"
@@ -256,7 +250,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "100",
-            "name": "Dr. Emma Harris (Dermatologist)",
+            "name": "Dr. Emma Harris",
+            "specialization": "Dermatologist",
             "available_slot": {
                 "date": "2024-11-10",
                 "time": "11:30-12:00"
@@ -264,7 +259,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "110",
-            "name": "Mr. Alexander Scott (Surgeon)",
+            "name": "Mr. Alexander Scott",
+            "specialization": "Surgeon",
             "available_slot": {
                 "date": "2024-10-05",
                 "time": "08:30-09:00"
@@ -272,7 +268,8 @@ def get_available_specialists(history):
         },
         {
             "specialist_id": "120",
-            "name": "Dr. Isabella Martinez (Ophthalmologist)",
+            "name": "Dr. Isabella Martinez",
+            "specialization": "Ophthalmologist",
             "available_slot": {
                 "date": "2024-09-30",
                 "time": "16:30-17:00"
@@ -283,7 +280,7 @@ def get_available_specialists(history):
     index = 0
     count = 0
     for specialist in specialists:
-        doc = nlp(specialist['name'])
+        doc = nlp(specialist['specialization'])
         h = nlp(history)
         temp = doc.similarity(h)
         if similarity < temp:
