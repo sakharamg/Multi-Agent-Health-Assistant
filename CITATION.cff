@@ -1,18 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as follows:"
+message: "If you use this software, please cite it as below."
 authors:
-  - name: "Sakharam Gawade"
+  - family-names: "Gawade"
+    given-names: "Sakharam"
     orcid: ""  # Add ORCID if available
-  - name: "Shivam Akhouri"
-  - name: "Chinmay Kulkarni"
-  - name: "Jagdish Samant"
-  - name: "Pragya Sahu"
-  - name: "Aastik"
-  - name: "Jai Pahal"
-  - name: "Saswat Meher"
-title: "Multi Agent based Medical Assistant for Edge Devices"
-year: 2025
-type: article
-archive: "arXiv"
-arxiv: "2503.05397"
-url: "https://arxiv.org/abs/2503.05397"
+  - family-names: "Akhouri"
+    given-names: "Shivam"
+  - family-names: "Kulkarni"
+    given-names: "Chinmay"
+  - family-names: "Samant"
+    given-names: "Jagdish"
+  - family-names: "Sahu"
+    given-names: "Pragya"
+  - family-names: "Aastik"
+    given-names: ""
+  - family-names: "Pahal"
+    given-names: "Jai"
+  - family-names: "Meher"
+    given-names: "Saswat"
+title: "Multi-Agent-Health-Assistant"
+version: 1.0.0
+doi: "10.5281/zenodo.1234"  # Update DOI if available
+date-released: 2025-03-09
+url: "https://github.com/sakharamg/Multi-Agent-Health-Assistant"
