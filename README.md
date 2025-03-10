@@ -80,3 +80,14 @@ workflows.
 
 ## Demo Video
 [![Video Title](https://img.youtube.com/vi/yAynmPSm_G8/0.jpg)](https://www.youtube.com/watch?v=yAynmPSm_G8)
+
+## Report
+@misc{gawade2025multiagentbasedmedical,
+      title={Multi Agent based Medical Assistant for Edge Devices}, 
+      author={Sakharam Gawade and Shivam Akhouri and Chinmay Kulkarni and Jagdish Samant and Pragya Sahu and Aastik and Jai Pahal and Saswat Meher},
+      year={2025},
+      eprint={2503.05397},
+      archivePrefix={arXiv},
+      primaryClass={cs.MA},
+      url={https://arxiv.org/abs/2503.05397}, 
+}
