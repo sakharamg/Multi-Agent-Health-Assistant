@@ -1,9 +1,18 @@
-@misc{gawade2025multiagentbasedmedical,
-      title={Multi Agent based Medical Assistant for Edge Devices}, 
-      author={Sakharam Gawade and Shivam Akhouri and Chinmay Kulkarni and Jagdish Samant and Pragya Sahu and Aastik and Jai Pahal and Saswat Meher},
-      year={2025},
-      eprint={2503.05397},
-      archivePrefix={arXiv},
-      primaryClass={cs.MA},
-      url={https://arxiv.org/abs/2503.05397}, 
-}
+cff-version: 1.2.0
+message: "If you use this work, please cite it as follows:"
+authors:
+  - name: "Sakharam Gawade"
+    orcid: ""  # Add ORCID if available
+  - name: "Shivam Akhouri"
+  - name: "Chinmay Kulkarni"
+  - name: "Jagdish Samant"
+  - name: "Pragya Sahu"
+  - name: "Aastik"
+  - name: "Jai Pahal"
+  - name: "Saswat Meher"
+title: "Multi Agent based Medical Assistant for Edge Devices"
+year: 2025
+type: article
+archive: "arXiv"
+arxiv: "2503.05397"
+url: "https://arxiv.org/abs/2503.05397"
