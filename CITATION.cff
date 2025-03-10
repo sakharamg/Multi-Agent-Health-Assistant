@@ -12,14 +12,14 @@ authors:
     given-names: "Jagdish"
   - family-names: "Sahu"
     given-names: "Pragya"
-  - family-names: "Aastik"
-    given-names: ""
+  - family-names: ""
+    given-names: "Aastik"
   - family-names: "Pahal"
     given-names: "Jai"
   - family-names: "Meher"
     given-names: "Saswat"
 title: "Multi-Agent-Health-Assistant"
 version: 1.0.0
-doi: "10.5281/zenodo.1234"  # Update DOI if available
-date-released: 2025-03-09
+doi: "https://doi.org/10.48550/arXiv.2503.05397"  # Update DOI if available
+date-released: 2025-03-07
 url: "https://github.com/sakharamg/Multi-Agent-Health-Assistant"
