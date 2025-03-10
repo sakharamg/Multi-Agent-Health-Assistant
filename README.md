@@ -81,7 +81,17 @@ workflows.
 ## Demo Video
 [![Video Title](https://img.youtube.com/vi/yAynmPSm_G8/0.jpg)](https://www.youtube.com/watch?v=yAynmPSm_G8)
 
-## Report
+## Report  
+
+📄 **[Multi-Agent Based Medical Assistant for Edge Devices](https://arxiv.org/abs/2503.05397)**  
+*Sakharam Gawade, Shivam Akhouri, Chinmay Kulkarni, Jagdish Samant, Pragya Sahu, Aastik, Jai Pahal, Saswat Meher.*  
+arXiv preprint, 2025.  
+
+## Citation  
+
+If you find our work useful, please cite it using the following BibTeX entry:  
+
+```bibtex
 @misc{gawade2025multiagentbasedmedical,
       title={Multi Agent based Medical Assistant for Edge Devices}, 
       author={Sakharam Gawade and Shivam Akhouri and Chinmay Kulkarni and Jagdish Samant and Pragya Sahu and Aastik and Jai Pahal and Saswat Meher},
